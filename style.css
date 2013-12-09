@@ -83,7 +83,8 @@ section {
 /* Portfolio section */
 
 .project {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
   /*border: 1px solid #444;*/
 }
 
@@ -92,6 +93,11 @@ section {
 }
 
 .project-image {
+
   padding: 20px;
+}
+
+.project-image img {
+  opacity: 0.9;
 }
 

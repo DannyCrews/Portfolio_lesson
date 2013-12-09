@@ -20,23 +20,25 @@ var Page = {
     Page.scrollTo($(sectionClass).offset().top - 100);
   },
 
-  setProjectHover: function() {
+  // setProjectHover: function() {
 
-    $('.project').hover(function() {
-      $(this).find('img').first().transition({
-        scale: 1.2
-      })
-    }, function() {
-      $(this).find('img').first().transition({
-        scale: 1
-      });
-    });
+  //   $('.project').hover(function() {
+  //     $(this).find('img').first().transition({
+  //       opacity: "1"
+  //     })
+  //     $(this).find('.project-link').first().css('display', 'block');
+  //   }, function() {
+  //     $(this).find('img').first().transition({
+  //       opacity: "0.9"
+  //     });
+  //     $(this).find('.project-link').first().css('display', 'none');
+  //   });
 
-  }
+  // }
 
 };
 
 $(function() {
   Page.setNavigationClicks();
-  Page.setProjectHover();
+  // Page.setProjectHover();
 });
