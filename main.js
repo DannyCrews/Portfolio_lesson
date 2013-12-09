@@ -18,10 +18,25 @@ var Page = {
   scrollToSection: function(sectionString) {
     var sectionClass = "." + sectionString;
     Page.scrollTo($(sectionClass).offset().top - 100);
+  },
+
+  setProjectHover: function() {
+
+    $('.project').hover(function() {
+      $(this).find('img').first().transition({
+        scale: 1.2
+      })
+    }, function() {
+      $(this).find('img').first().transition({
+        scale: 1
+      });
+    });
+
   }
 
 };
 
 $(function() {
   Page.setNavigationClicks();
+  Page.setProjectHover();
 });
