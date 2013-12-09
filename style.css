@@ -58,3 +58,25 @@ a:visited {text-decoration: none;}
 section {
   text-align: center;
 }
+
+.about-content p{
+  font-size: 24px;
+  text-align: left;
+  padding: 10px;
+}
+
+
+/* Portfolio section */
+
+.project {
+  margin-bottom: 20px;
+  border: 1px solid #444;
+}
+
+.project span {
+  display: none;
+}
+
+.project-image {
+  padding: 20px;
+}
