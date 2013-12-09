@@ -30,9 +30,7 @@ a:visited {text-decoration: none;}
 .navigation-wrapper li {
   display: inline-block;
   height: 60px;
-  padding-top: 40px;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding: 40px 35px 50px 35px;
 }
 
 .navigation-wrapper li:hover {
@@ -55,4 +53,8 @@ a:visited {text-decoration: none;}
 }
 
 
+/* Section Styles */
 
+section {
+  text-align: center;
+}
