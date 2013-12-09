@@ -2,8 +2,10 @@ var Page = {
 
   setNavigationClicks: function() {
     $('.navigation-wrapper a').click(function(e) {
-      e.preventDefault();
-      Page.scrollToSection($(e.currentTarget).attr('href'));
+      if(!$(e.currentTarget).hasClass('direct-link')) {
+        e.preventDefault();
+        Page.scrollToSection($(e.currentTarget).attr('href'));
+      }
     });
   },
 
