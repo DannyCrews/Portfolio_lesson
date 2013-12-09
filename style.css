@@ -16,11 +16,26 @@ a:active {text-decoration: none;}
 a:visited {text-decoration: none;}
 
 
+.section-spacer {
+  height: 100px;
+}
+
 /* navigation styles */
+
+.navigation-offset-fix {
+  height: 200px;
+}
 
 .navigation-wrapper {
   background: black;
   margin-top: -20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navigation-wrapper ul {
+  margin-bottom: 0;
 }
 
 .navigation-wrapper a {
@@ -45,7 +60,7 @@ a:visited {text-decoration: none;}
   /*float: left;*/
   position: absolute;
   text-indent: 30px;
-  padding-top: 10px;
+  padding-top: 24px;
 }
 
 .buttons-wrapper {
@@ -70,7 +85,7 @@ section {
 
 .project {
   margin-bottom: 20px;
-  border: 1px solid #444;
+  /*border: 1px solid #444;*/
 }
 
 .project span {
